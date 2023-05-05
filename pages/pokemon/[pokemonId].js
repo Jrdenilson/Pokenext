@@ -39,10 +39,11 @@ export default function Pokemon({ pokemon }) {
     <div className={styles.pokemon_container}>
       <h1 className={styles.title}>{pokemon.name}</h1>
       <Image
-        src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png `}
+        src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
         width="200"
         height="200"
         alt={pokemon.name}
+        srcset={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
       />
       <div>
         <h3>Número:</h3>
